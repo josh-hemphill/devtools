@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "outDir": "lib",
     "paths": {
-      "@back/*": ["packages/app-backend-core/src/*"],
-      "@front/*": ["packages/app-frontend/src/*"],
+      "@back/*": [
+        "packages/app-backend-core/src/*"
+      ],
+      "@front/*": [
+        "packages/app-frontend/src/*"
+      ],
     },
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
