@@ -38,7 +38,7 @@ jobs:
         run: yarn install --pure-lockfile
 
       - name: Build the extension
-        run: yarn run build && node release.js && yarn run test
+        run: yarn run build && node release.js && yarn run test && yarn run zip
 
       - name: Release
         uses: softprops/action-gh-release@v1
