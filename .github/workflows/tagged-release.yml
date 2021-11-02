@@ -49,13 +49,3 @@ jobs:
             !**/src/
             !*webpack.config.js
             !**/node_modules/
-      - name: Upload built artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: "extension"
-          retention-days: ${{ inputs.retention_days }}
-          path: |
-            packages/shell-chrome/build
-            !**/src/
-            !*webpack.config.js
-            !**/node_modules/
